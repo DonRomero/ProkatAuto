@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <CLIENT>
+    <id>1</id>
+    <FIO>Пётр Петров Петрович</FIO>
+    <Data>1990</Data>
+  </CLIENT>
+  <CLIENT>
+    <id>2</id>
+    <FIO>Иван Иванов Иванович</FIO>
+    <Data>1980</Data>
+  </CLIENT>
+  <CLIENT>
+    <id>3</id>
+    <FIO>Ольга Ольгова Олеговна</FIO>
+    <Data>1985</Data>
+  </CLIENT>
+  <CLIENT>
+    <id>4</id>
+    <FIO>Кандрин Дмитрий Владимирович</FIO>
+    <Data>1996</Data>
+  </CLIENT>
+</DocumentElement>

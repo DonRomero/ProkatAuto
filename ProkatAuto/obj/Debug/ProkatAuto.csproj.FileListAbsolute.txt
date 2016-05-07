@@ -16,3 +16,5 @@ c:\my documents\visual studio 2015\Projects\ProkatAuto\ProkatAuto\obj\Debug\Prok
 c:\my documents\visual studio 2015\Projects\ProkatAuto\ProkatAuto\obj\Debug\ProkatAuto.pdb
 c:\my documents\visual studio 2015\Projects\ProkatAuto\ProkatAuto\obj\Debug\ProkatAuto.GetAutoForm.resources
 c:\my documents\visual studio 2015\Projects\ProkatAuto\ProkatAuto\bin\Debug\itextsharp.dll
+c:\my documents\visual studio 2015\Projects\ProkatAuto\ProkatAuto\obj\Debug\ProkatAuto.BackupForm.resources
+c:\my documents\visual studio 2015\Projects\ProkatAuto\ProkatAuto\obj\Debug\ProkatAuto.csproj.ResolveComReference.cache

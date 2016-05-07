@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace ProkatAuto
 {
@@ -31,6 +25,7 @@ namespace ProkatAuto
         private void ProkatAutoForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             DBworker.close();
+            Report.closeCon();
         }
 
         private void getAutoButton_Click(object sender, EventArgs e)
@@ -42,12 +37,18 @@ namespace ProkatAuto
         {
             //try
             //{
-                Report.report();
+                Report.makePdfReport();
+                Process.Start("autoReport.pdf");
             //}
             //catch(Exception ex)
             //{
             //    MessageBox.Show("Возникла ошибка при создании отчёта!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             //}
+        }
+
+        private void backupButton_Click(object sender, EventArgs e)
+        {
+            new BackupForm().ShowDialog();
         }
     }
 }

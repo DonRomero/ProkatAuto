@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <AUTO>
+    <id>1</id>
+    <Marka>LADA 2106</Marka>
+    <God>1995</God>
+    <Cvet>Красный</Cvet>
+    <Type>МКПП</Type>
+  </AUTO>
+  <AUTO>
+    <id>2</id>
+    <Marka>LADA Priora седан</Marka>
+    <God>2010</God>
+    <Cvet>Синий</Cvet>
+    <Type>МКПП</Type>
+  </AUTO>
+  <AUTO>
+    <id>3</id>
+    <Marka>FORD Focus седан</Marka>
+    <God>2013</God>
+    <Cvet>Белый</Cvet>
+    <Type>МКПП</Type>
+  </AUTO>
+  <AUTO>
+    <id>4</id>
+    <Marka>LADA Kalina хетчбэк</Marka>
+    <God>2013</God>
+    <Cvet>Металлик</Cvet>
+    <Type>МКПП</Type>
+  </AUTO>
+  <AUTO>
+    <id>5</id>
+    <Marka>NISSAN QASHQAI</Marka>
+    <God>2015</God>
+    <Cvet>Чёрный</Cvet>
+    <Type>АКПП</Type>
+  </AUTO>
+</DocumentElement>

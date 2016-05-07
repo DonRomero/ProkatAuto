@@ -4,7 +4,7 @@ using System.IO;
 using iTextSharp.text.pdf;
 using System.Data.SQLite;
 using System.Data;
-using System.Diagnostics;
+using System.Windows.Forms;
 using Excel = Microsoft.Office.Interop.Excel;
 
 namespace ProkatAuto
@@ -155,9 +155,16 @@ namespace ProkatAuto
                     series.XValues = excelworksheet.get_Range("A1", "A" + dt.Rows.Count);
                 excelapp.ActiveChart.Export(Environment.CurrentDirectory + "\\chart" + f + ".bmp", "BMP", Type.Missing);
             }
-            if (File.Exists("chart.xls"))
-                File.Delete("chart.xls");
-            excelapp.Workbooks[1].SaveAs(Environment.CurrentDirectory + "\\chart.xls");
+            try
+            {
+                if (File.Exists("chart.xls"))
+                    File.Delete("chart.xls");
+                excelapp.Workbooks[1].SaveAs(Environment.CurrentDirectory + "\\chart.xls");
+            }
+            catch (IOException ex)
+            {
+                MessageBox.Show("Необходимо закрыть все приложения, работающие с файлом charts.xml", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
             //excelapp.Visible = true;
             excelapp.Quit();
         }
